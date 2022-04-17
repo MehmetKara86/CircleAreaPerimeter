@@ -1,0 +1,33 @@
+/* Author :Mehmet KARA
+   Date: 17.04.2022-18:11
+   Program Name: Calculation Circle Area and Perimeter
+ */
+import java.util.Scanner;
+
+public class CircleAreaPerimeter {
+
+    public static void main (String[] arg) {
+
+        int radius;
+
+        double pi=3.17, area, perimeter;
+
+        Scanner compenent = new Scanner(System.in);
+
+        System.out.print("Enter the circle half radius [m]: ");
+
+        radius = compenent.nextInt();
+
+        area = pi * radius * radius;
+
+        perimeter = 2 * pi * radius;
+
+        System.out.println("This circle area is " + area + " square meter");
+
+        System.out.println("This circle perimeter is " + perimeter + " meter");
+
+
+
+    }
+
+}
